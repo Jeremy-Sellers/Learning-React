@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //classes in Js are similar to Java. They can be instantiated and functions and utilities can be called on the newly created class
+    class Human{
+        constructor() {
+            this.gender = 'male'
+        }
+
+        printGender(){
+            console.log(this.gender)
+        }
+    }
+
+
+    //When a class extends another, it inherits the properties and methods inside it. Needs to have super(); in constructor if implementing constructor. you may override variables in constructor from inherited variables
+    class Person extends Human{
+        constructor() {
+            super();
+            this.name = "Jer"
+            this.gender = 'other'
+        }
+
+        printMyName(){
+            console.log(this.name)
+        }
+    }
+
+    const person = new Person();
+
+    // person.printMyName()
+</script>
+
+</body>
+</html>

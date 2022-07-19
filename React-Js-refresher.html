@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isZero(x){
+        if (x == 0){
+            return true
+        }
+        else {return false}
+    }
+
+//    instead of var use let & const
+//     var myName = 'jeremy';
+    let myName = 'jeremy';
+    console.log(myName)
+
+    myName = 'sellers';
+
+    console.log(myName);
+
+    //Since 'Name' is a const, it cannot be later changed
+    const Name = 'Jim';
+    console.log(Name)
+
+    // Name = 'tim';
+    // console.log(Name);
+
+
+// arrow functions
+// function printMyName(name){
+//     console.log(name)
+// }
+//
+// printMyName('jeremy'); //Prints jeremy to console
+
+    //Syntax for one argument
+const printMyName = (name) => {
+    console.log(name);
+}
+    printMyName('james')
+
+    //if only one argument, parenthesis not needed
+    const printMyNameSingleArg = name => {
+        console.log(name);
+    }
+
+    //no arguments only requires empty parenthesis
+    const printANameNoArgs = () => {
+        console.log('A name chosen in function')
+    }
+
+    //multiple arguments
+    const printNameAndAge = (name, age) => {
+        console.log(name, age)
+    }
+
+    printNameAndAge('jeremy', 26);
+
+    //return data
+    //when returning is all thats being done, curly brackets not needed, nor return keyword
+    const multiplyByTwo = (num) => num * 2;
+
+    console.log(multiplyByTwo(3));
+
+
+</script>
+</body>
+</html>
