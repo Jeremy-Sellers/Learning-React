@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+<!--Spread-->
+//using ...varName copies values from varName and pastes them in new variable
+const nums = [1,2,3];
+const newNums = [...nums,4]
+console.log(newNums)
+
+const person = {
+    name: 'Tim'
+}
+
+const newPerson = {
+    //copied info from person and pasted in new const
+    ...person,
+    age: 25
+}
+console.log(newPerson)
+
+
+
+//Rest operator used in functions
+
+//use of 3 dots turns argument into an array allowing for array dot operator filter to be used
+const filter = (...args) => {
+    //filters out any element in arg that isnt a one and returns only ones
+    return args.filter(element => element === 1);
+}
+console.log(filter(1,2,3))//returns [1]
+console.log(filter(1,2,3,1,3,1))//returns [1,1,1]
+
+
+
+</script>
+</body>
+</html>

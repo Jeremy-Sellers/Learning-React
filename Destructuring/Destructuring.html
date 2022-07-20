@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--Array destructuring-->
+    [a,b] = ['hello','max']
+console.log(a);//hello
+console.log(b);//max
+
+const nums = [1,2,3];
+[num1, num2] = nums;
+console.log(num1, num2);//logs 1 and 2
+[num1, ,num3] = nums;//to skip 2, leave empty space in array
+console.log(num1, num3);//logs 1 and 3
+
+//Object destructuring
+ const {name} = {name:'Max',age: 25};
+console.log(name);//returns Max
+// console.log(age); //error, undefined
+
+
+</script>
+
+</body>
+</html>
